@@ -5,8 +5,8 @@ using UnityEngine.Events;
 
 public class GameEventListener : MonoBehaviour
 {
-    [SerializeField] private GameEvent Event;
-    [SerializeField] private UnityEvent Response;
+    [SerializeField] private GameEvent Event = null;
+    [SerializeField] private UnityEvent Response = null;
 
     private void OnEnable() {
         Event.RegisterListener(this);
