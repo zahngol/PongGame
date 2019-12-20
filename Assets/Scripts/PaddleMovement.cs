@@ -6,8 +6,8 @@ namespace com.zahngol.pong
 {
     public class PaddleMovement : MonoBehaviour
     {
-        [SerializeField] private KeyCode upKey;
-        [SerializeField] private KeyCode downKey;
+        [SerializeField] private KeyCode upKey = KeyCode.UpArrow;
+        [SerializeField] private KeyCode downKey = KeyCode.DownArrow;
         [SerializeField] [Range(0,0.5f)] private float speed = 0.25f;
 
         void Update()
